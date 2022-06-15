@@ -1,0 +1,119 @@
+body {
+    box-sizing: border-box;
+    background-color: black;
+    justify-content: center;
+}
+
+#container {
+    width: 70%;
+    height: 40%;
+    margin: 0 auto;
+    display: inline-flex;
+    flex-direction: row;
+    align-items: baseline;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 15px ;
+    color: white;
+    background-color: white;
+}
+
+.card {
+    margin: auto;
+    display: inline-flex;
+}
+
+.card1 {
+    width: 160px;
+    height: 300px;
+    background-color: #E28525;
+    padding: 35px;
+
+}
+.card2 {
+    width: 170px;
+    height: 300px;
+    background-color: #016972 ;
+    padding: 35px;
+}
+
+.card3 {
+    width: 170px;
+    height: 300px;
+    background-color: #00403F ;
+    padding: 35px;
+}
+
+h3 {
+    font-family: "Agency FB"
+}
+
+p {
+    font-family: Tahoma;
+    font-size: small;
+    line-height: 150%;
+    text-space: 10px;
+    margin-bottom: 15px;
+    padding-bottom: 50px;
+}
+
+button {
+    background-color: white;
+    border: none;
+    width: 130px;
+    height: 40px;
+    padding: 10px;
+    margin: 0 auto;
+    border-radius: 25px;
+}
+
+.card1 button {
+    color: #E28525;
+}
+
+.card2 button {
+    color: #016972;
+}
+
+.card3 button {
+    color: #00403F;
+}
+
+.red {
+    grid-area: header;
+    background-color: #EB5020;
+}
+.yellow {
+    grid-area: menu;
+    background-color: #FFA401;
+}
+.green {
+    grid-area: main;
+    background-color: #05AA42;
+}
+.blue {
+    grid-area: right;
+    background-color: #01AEFD;
+}
+.bottom {
+    grid-area: footer;
+    background-color: #01AEFD;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 120px 120px 120px 200px;
+    grid-template-rows: 100px 100px 100px 100px ;
+    grid-template-areas:
+        'header header header menu'
+        'header header header menu'
+        'main main right right'
+        'main main footer footer';
+    gap: 10px;
+    background-color: beige;
+    padding: 10px;
+    width: 590px;
+    margin: auto;
+}
